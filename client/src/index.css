@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap");
+
+.bgtransitiongreen {
+  background: linear-gradient(93.01deg, #006c2c 0%, #00933c 100%);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: NoeDisplay;
+  src: url(../src/assets/fonts/NoeDisplay-Semibold.otf);
+}
+@font-face {
+  font-family: NoeStandard;
+  src: url(../src/assets/fonts/NoeStandard-Bold.otf);
+}
+.cssprogress {
+  padding: 100px 108px 64px;
+}
+.csshighlights {
+  padding: 60px 108px 80px;
+}
+
+.highlightscard {
+  padding: 36px 30px;
+}
+
+.image-highlights {
+  object-fit: cover;
+}
+
+.cssaims {
+  padding: 80px 108px 100px;
+}
+.sidesection {
+  padding: 0px 0px 0px 0px;
+}
+.cssutilize {
+  background: rgba(0, 108, 44, 0.1);
+}
+.cssdonation {
+  background-image: url("https://res.cloudinary.com/dsnnvjuqz/image/upload/v1687257206/donation_aut5b0.png");
+  background-color: rgba(0, 108, 44, 0.3); /* Linear gradient with opacity */
+  background-image: linear-gradient(
+    93.01deg,
+    rgba(0, 108, 44, 0.8) 0%,
+    rgba(0, 147, 60, 0.8) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.cssdonation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/dsnnvjuqz/image/upload/v1687257206/donation_aut5b0.png");
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Background image with opacity */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+.cssbutton {
+  padding: 14px 24px 14px 28px;
+}
+.cssteam {
+  background: linear-gradient(180deg, #ebf3ee 0%, rgba(235, 243, 238, 0) 100%);
+}
+.navlinks {
+  text-decoration: none;
+  color: white;
+}
+.grclose path {
+    stroke : white;
+}
+
+/* adding media queries for min width of 768px  */
+
+@media screen and (min-width: 768px) {
+    .cssprogress {
+        padding: 100px 48px 64px;
+    }
+}
+@media screen and (min-width: 368px) {
+    .cssprogress {
+        padding: 100px 24px 64px;
+    }
+}
+
+.bordertop {
+  border-top: 1px solid #2c2c2c;
+}
+
